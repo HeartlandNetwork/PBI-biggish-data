@@ -1,33 +1,37 @@
 # PBI-biggish-data
 
-This repo is a proof-of-concept for low code / no code data science. The objective
-is to apply simple data science methods to a large dataset (> 8 million records) using a 
+This repo is an ecological example of low code / no code "business intelligence". 
+The example is for education purposes only. The objective was to apply simple 
+data processing methods to a large dataset (> X million records) using a 
 combination of Microsoft SQL Server and Power BI on a Windows 10 laptop. The SQL Server
 instance is a "local host" instance residing on my laptop. 
 
-The data source is BioTIME, and the global biodiversity dataset was the "all database" summary
-dataset. Please see the following link for more information about BioTIME.
+The test data source is the USGS North American Breeding Bird Survey, (see 
+link below).  This repo 
+contains T-SQL scripts and Power BI files that *should* be executable. These
+examples are for education purposes only. Please re-use them at your own peril.
 
-https://biotime.st-andrews.ac.uk/
+# Reference
 
-This repo contains T-SQL scripts and Power BI files that *should* be executable. These
-examples are for education purposes only. Please re-use them at your own peril. 
+North American Breeding Bird Survey
 
-# Formulating a data science question
+https://www.usgs.gov/centers/eesc/science/north-american-breeding-bird-survey
 
-Separately, I've generated a species list for Quercus (oak) tree species from GBIF. I am
-going to use that list to add common names to my data.
+2024 Release - North American Breeding Bird Survey Dataset (1966 - 2023)
 
-My data science question is "how has North American oak species diversity changed through time?"
+https://doi.org/10.5066/P136CRBV.
 
-My method goes as follows. Do all large scale operations in SQL Server then ask ecoligcally
-meaningful questions in Power BI. The large scale operations include filtering the BioTIME 
-dataset (1) for the genus "Quercus" and (2) for the lat/log bounding coordinates for North 
-America. This can be accompished with a single query which creates a view object that
-I'll name vw_NorthAmericanOaks.
 
-These filters quickly reduce the dataset into something quite manageble by Power BI. Once
-we've done that, we can have some "low code / no code" fun in Power BI.
+
+# Creating a semantic model
+
+To get started, 
+
+
+
+
+
+
 
 
 Please contact me for more info. Thanks for reading. 
@@ -43,7 +47,5 @@ Transformations in Power BI were all done using no code point-and-click methods 
 the Power Query tool.  
 
 
-
-
-
+-13.4,35.3,43.5,71.5
  
